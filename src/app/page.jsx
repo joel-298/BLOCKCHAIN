@@ -12,19 +12,11 @@ const Page = () => {
     <div>
       {/* ID added to sections for scrolling */}
       <Navbar />
-      <section id="home">
         <Home1 />
-      </section>
-      <section id="home2">
         <Home2 />
-      </section>
         <Home3 />
-      <section id="about">
         <About />
-      </section>
-      <section id="contact">
         <Footer />
-      </section>
     </div>
   );
 };

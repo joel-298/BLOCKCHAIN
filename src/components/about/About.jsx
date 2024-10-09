@@ -4,7 +4,7 @@ import styles from "./about.module.css" ;
 
 const About = () => {
   return (
-    <div>
+    <div id="about">
       About page
     </div>
   )
