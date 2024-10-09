@@ -4,6 +4,12 @@
   --text: white ;
   --textSoft : #e5e5e5;
   --btn : #3673fd;
+  --texthover : rgb(160, 87, 237);
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: 3s;
 }
 
 *{

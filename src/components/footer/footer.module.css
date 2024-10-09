@@ -1,0 +1,109 @@
+.container {
+    /* Container settings */
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8vh;
+    margin-top: 15vh;
+
+    /* Add background image with gradient overlay */
+    background: linear-gradient( rgb(0, 0, 0), rgba(255, 255, 255, 0) 100% /* Bottom part fades into image */
+      ),
+      url('/footer_bg.webp'); /* Path to your background image */
+    
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+}
+
+.child1 {
+    /* background-color: brown; */
+    height:100%; 
+    width:45%;
+    display:flex;
+    flex-direction: column;
+    row-gap: 10vh;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    height:30%;
+    /* background-color: blue; */
+    width:100%;
+    padding-left: 5vh;
+}
+.heading h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+.heading h2{
+    font-size: 22px;
+    margin-top: 3vh;
+    font-weight: 200;
+}
+.gmail {
+    display: flex;
+    height:10%;
+    /* background-color: blue; */
+    width:100%;
+    justify-content: start;
+    align-items: center;
+    padding-left: 5vh;
+    font-size: 22px;
+}
+.gmail h2 {
+    font-weight: 200;
+}
+.arrow_right {
+    height:40px;
+    width:40px;
+    margin-left: 3vh;
+}
+.gmail:hover {
+    cursor: pointer;
+    transition: 0.5s; 
+}
+
+.child2 , .child3 {
+    /* background-color: brown; */
+    height:100%; 
+    width:20%;
+    display: flex;
+    padding: 5vh auto;
+    flex-direction: column;
+    row-gap: 1vh;
+}
+.child2 .heading , .child2 .lists , .child3 .heading , .child3 .lists {
+    /* background-color: red; */
+    padding: 0vh 7vh;
+}
+.heading {
+    height:20%;
+}
+.lists { 
+    display: flex;
+    height:40%;
+    flex-direction: column;
+    row-gap: 2.5vh;
+}
+.lists h3{
+    font-weight: 200;
+}
+
+
+.child4 {
+    /* background-color: brown; */
+    height:100%; 
+    width:5%;   
+    padding-top: 3vh;
+}
+.arrow_up {
+    /* background-color: black; */
+    height:50px;
+    width:50px;
+}
+.arrow_up:hover {
+    cursor: pointer;
+    transition: 0.5s;
+}
