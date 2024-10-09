@@ -1,0 +1,81 @@
+.container {
+    /* background-color: rgb(10, 79, 255); */
+    height:10vh;
+    width: 100%;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_container{ 
+    height:100% ;
+    /* background-color: red; */
+    display: flex;
+}
+
+.logo_img{
+    /* background-color: black; */
+    height: 100%;
+    width:100%;
+}
+.logo_img:hover{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.content{
+    /* background-color: red ; */
+    display: flex;
+    width:30%;
+    justify-content: space-between;
+    font-size: 22px;
+    align-items: end;
+    z-index: 1;
+}
+.content_items:hover {
+    transition:0.5s;
+    cursor: pointer;
+    color: rgb(170, 110, 234);
+    transition: text-shadow 0.3s ease; /* Smooth transition */
+}
+.content_items:hover {
+    text-shadow: 0 0 10px rgba(48, 3, 84, 0.8),
+                 0 0 20px rgba(43, 4, 111, 0.6),
+                 0 0 30px rgba(75, 50, 50, 0.5),
+                 0 0 50px rgb(170, 110, 234); /* Glowing effect */
+  }
+.content div {
+    /* background-color: brown; */
+    display: flex;
+    height:70%;
+    align-items: end;
+    padding:2vh 4vh;
+}
+
+
+.menu {
+    /* background-color: red; */
+    display: flex;
+    column-gap: 2vh;
+    align-items: end;
+    z-index: 1;
+}
+.menu:hover{ 
+    cursor: pointer;
+    transition: 0.5s;
+    color: rgb(170, 110, 234);
+}
+.menu p {
+    display: flex;
+    align-items: end;
+    font-size: 22px;
+    padding-bottom: 2vh;
+
+}
+.menu_logo_img {
+    /* background-color: rgb(40, 0, 0); */
+    height: 50%;
+    width:35px; 
+    padding-bottom: 2vh;
+}
