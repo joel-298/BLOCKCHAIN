@@ -14,7 +14,9 @@
     font-size: x-large;
     /* background-color: rgb(18, 94, 94); */
 }
-
+.more_about {
+    display: flex;
+}
 .text{
     width: 40%;
     line-height: 1.8;
@@ -22,10 +24,13 @@
 }
 
 .arrow{
-    /* background-color: blueviolet; */
-    height:20px;
-    width: 40px;
+    height:5vh;
+    width:12vh;
+    /* background-color: red; */
 
+}
+.text .more_about h2 {
+    font-weight: 300;
 }
 .text p{
     font-size: larger;
