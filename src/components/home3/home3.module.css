@@ -1,0 +1,20 @@
+.container{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    background-image: url("/home3.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 50% 400px;
+}
+.text h1{
+    font-size:60px ;
+    font-weight: 300;
+    padding: 120px;
+    margin: 80px;
+    
+
+}
+.text span{
+    background-color: rgb(141, 43, 226);
+}

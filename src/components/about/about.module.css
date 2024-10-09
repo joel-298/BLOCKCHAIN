@@ -1,0 +1,39 @@
+.container{
+    /* background-color: violet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.container button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: x-large;
+    /* background-color: rgb(18, 94, 94); */
+}
+
+.text{
+    width: 40%;
+    line-height: 1.8;
+    /* padding-left: 250px; */
+}
+
+.arrow{
+    /* background-color: blueviolet; */
+    height:20px;
+    width: 40px;
+
+}
+.text p{
+    font-size: larger;
+    font-weight: 300;
+
+}
+.text h1{
+    font-size: 100px;
+    font-weight: 400;
+}
+
