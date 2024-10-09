@@ -9,10 +9,10 @@ const WalletPage = () => {
         <Image src="/logo.svg" alt="logo" width={0} height={0} className={styles.logo_img}/>
       </div>
       <div className={styles.content}>
-
+        Connect your wallet !
       </div>
       <div className={styles.button}>
-
+        <button>Connect</button>
       </div>
     </div>
   )

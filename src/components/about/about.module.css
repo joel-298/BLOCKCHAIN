@@ -17,6 +17,9 @@
 .more_about {
     display: flex;
 }
+.link {
+    display: flex;
+}
 .text{
     width: 40%;
     line-height: 1.8;

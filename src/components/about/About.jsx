@@ -1,7 +1,7 @@
 // import React from 'react'
 import Image from "next/image";
 import styles from "./about.module.css" ; 
-
+import Link from "next/link" ;
 
 const About = () => {
   return (
@@ -13,8 +13,10 @@ const About = () => {
         Ipsa beatae dolorum nobis suscipit doloremque nihil repudiandae, quo officiis nesciunt eos ducimus delectus dolorem odio laudantium impedit placeat distinctio. Distinctio amet quisquam eos perferendis eaque suscipit culpa consequuntur debitis!</p>
         <br />
         <div className={styles.more_about}>
-          <h2>More About Us </h2>
-          <Image src="/arrow-right.svg" alt="arrow-right" width={0} height={0} className={styles.arrow} />
+          <Link href="/about" passHref className={styles.link}>
+            <h2>More About Us </h2>
+            <Image src="/arrow-right.svg" alt="arrow-right" width={0} height={0} className={styles.arrow} />
+          </Link>
         </div>
       </div>
     </div>
