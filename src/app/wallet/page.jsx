@@ -1,11 +1,18 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import styles from "./wallet.module.css";
 import Image from "next/image";
-import { createThirdwebClient } from "thirdweb";
-import { ConnectButton } from "thirdweb/react";
+import Web3 from "web3";
 
 const WalletPage = () => {
-  // const client = createThirdwebClient({ secretKey: process.env.THIRDWEB_KEY });
+  const [web3, setWeb3] = useState();
+
+  useEffect(() => {
+    if (window) {
+      setWeb3(new Web3(window.ethereum));
+    }
+  }, []);
 
   return (
     <div className={styles.container}>
@@ -20,8 +27,16 @@ const WalletPage = () => {
       </div>
       <div className={styles.content}>Connect your wallet !</div>
       <div className={styles.button}>
-        <button>Connect</button>
-        {/* <ConnectButton client={client} /> */}
+        <button
+          onClick={() => {
+            web3.eth.requestAccounts().then(function (accounts) {
+              console.log(accounts);
+              console.log(accounts[0]); // The user's primary Ethereum address
+            });
+          }}
+        >
+          Connect
+        </button>
       </div>
     </div>
   );
