@@ -1,7 +1,11 @@
+"use client"
+
 import React from 'react'
 import styles from "./wallet.module.css"
 import Image from "next/image" ; 
 import Link from "next/link" ; 
+import { useState, useEffect } from 'react';
+import Web3 from 'web3';
 const WalletPage = () => {
   const [web3, setWeb3] = useState();
 
@@ -21,7 +25,6 @@ const WalletPage = () => {
         <p>to unlock a seamless, secure, and innovative experience for managing
         your digital assets effortlessly !</p>
       </div>
-      <div className={styles.content}>Connect your wallet !</div>
       <div className={styles.button}>
         <button
           onClick={() => {
