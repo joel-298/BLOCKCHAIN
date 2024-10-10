@@ -15,6 +15,11 @@
     /* background-color: rgb(18, 94, 94); */
 }
 
+.container button:hover{
+    cursor: pointer;
+    color: rgb(207, 167, 243);
+}
+
 .text{
     width: 40%;
     line-height: 1.8;

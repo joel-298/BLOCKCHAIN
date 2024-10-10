@@ -1,6 +1,7 @@
 // import React from 'react'
 import Image from 'next/image'
 import styles from './home2.module.css'
+import Link from 'next/link'
 
 const Home2 = () => {
   return (
@@ -11,7 +12,9 @@ const Home2 = () => {
                 <h1>What is Web3 Space?</h1><br />
                 <p>Things around crypto, NFTs and web3 as a whole are unbelievably interesting. Unfortunately, the overall usability as well as the quality of the UI is often still not up to the task.
                     To achieve mass adoption, overcoming those hurdles will be key. And this is where our story begins.</p><br />
-                <button>Create Your Wallet</button>
+                <Link href="/wallet">
+                  <button>Create Your Wallet</button>
+                </Link>
             </div>
             <div className={styles.imgContainer}>
                 {/* <Image src="/vector.svg" alt="" width={100} height={100} className={styles.img1} /> */}
