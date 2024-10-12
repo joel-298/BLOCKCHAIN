@@ -25,18 +25,18 @@ const Accounts = () => {
           <table>
             <thead>
               <tr className={styles.box21}>
-                <th className={styles.columns1}>Balance</th>
-                <th className={styles.columns1}>Age</th>
                 <th className={styles.columns1}>Outgoing transactions</th>
-                <th className={styles.columns1}>Owned NFTs</th>
+                <th className={styles.columns1}>Volume</th>
+                <th className={styles.columns1}>Income</th>
+                <th className={styles.columns1}>Outcome</th>
               </tr>
             </thead>
             <tbody>
-              <tr className={styles.box21}>
-                <td className={styles.columns2}>$20,827.38</td>
-                <td className={styles.columns2}>1y 2m 15d</td>
-                <td className={styles.columns2}>3940</td>
-                <td className={styles.columns2}>24</td>
+                <tr className={styles.box21}>
+                <td className={styles.columns2} data-label="Outgoing transactions">258940</td>
+                <td className={styles.columns2} data-label="Volume">$370,835.50</td>
+                <td className={styles.columns2} data-label="Income">+403,735.50</td>
+                <td className={styles.columns2} data-label="Outcome">-$429,040.02</td>
               </tr>
             </tbody>
           </table>

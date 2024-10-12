@@ -86,9 +86,8 @@
 
 @media (max-width: 1023px) {
     .container {
-        margin: 0;
+        margin: 1%;
         padding: 2vh 4vh;
-        width: 100%;
         border-radius: 1vh;
     }
 
@@ -165,3 +164,41 @@
 }
 
 
+@media (max-width: 600px) {
+    .table_container table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .table_container thead {
+        display: none; /* Hide table headers on small screens */
+    }
+
+    .table_container tbody tr {
+        display: flex;
+        flex-direction: column; /* Stack rows vertically */
+        margin-bottom: 2vh; /* Add spacing between rows */
+    }
+
+    .table_container tbody td {
+        display: flex;
+        justify-content: space-between; /* Align label and data */
+        padding: 1vh 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .table_container tbody td::before {
+        content: attr(data-label); /* Use the data-label attribute for headers */
+        flex-basis: 50%;
+        text-align: left;
+        font-weight: bold;
+        color: #ddd;
+        padding-right: 1vh;
+    }
+
+    .columns2 {
+        flex-basis: 50%;
+        text-align: right; /* Align data to the right */
+        font-size: 2vh;
+    }
+}
