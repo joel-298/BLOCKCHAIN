@@ -6,15 +6,90 @@
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-size: 50% 400px;
+    margin: 6vh;
 }
 .text h1{
-    font-size:60px ;
+    font-size:8.5vh ;
     font-weight: 300;
-    padding: 120px;
-    margin: 80px;
+    margin: 10vh;
     
 
 }
 .text span{
     background-color: rgb(141, 43, 226);
+}
+
+
+@media (max-width: 1024px) {
+    
+    .text h1{
+        font-size:8vh ;
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        background-size: 40% 300px;
+    }
+    .text h1{
+        font-size:6vh ;
+        width: 80%;
+    }
+}
+
+
+
+
+@media (max-width: 426px) {
+    .container{
+        background-size: 50% 250px;
+        margin: 3vh;   
+        padding: 0px;
+        /*  */
+    }
+    .text h1{
+        font-size:4.5vh ;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 376px) {
+    .container{
+        background-size: 50% 200px;
+    }
+    .text h1{
+        font-size:4vh ;
+        width: 60%;
+    }
+}
+
+@media (max-width: 376px) {
+    .container{
+        background-size: 55% 200px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .text h1{
+        font-size:3vh ;
+        width: 100%;
+        margin: 3vh;
+        
+    }
+}
+
+@media (max-width: 321px) {
+    .container{
+        background-size: 55% 170px;
+        margin: 3vh;
+        padding: 0px;
+    }
+    .text h1{
+        font-size:3vh ;
+        width: 80%;
+        margin: 0vh;
+        
+    }
 }

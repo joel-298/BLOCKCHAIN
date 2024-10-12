@@ -13,7 +13,7 @@ const DashboardPage = () => {
         <Sidebar/>
       </div> */}
       <div className={styles.child2}>
-        <SettingsPage/> 
+        <SettingsPage /> 
       </div>
     </div>
     </>

@@ -10,3 +10,76 @@
     border-radius: 2vh;
     margin-top: -1.5vh;
 }
+
+.child1 {
+    /* background-color: blueviolet; */
+    padding: 2vh 0vh 3vh 0vh;
+}
+
+.child1 h4 {
+    font-size: 3.5vh;
+    color: rgb(203, 204, 204);
+}
+
+.child2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3vh;
+}
+
+.component {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    /* background: blue; */
+    gap: 1vh;
+    width: calc(25% - 20px); /* 25% width for 4 components in one row, accounting for the gap */
+    box-sizing: border-box;
+}
+
+.component img{
+    border-radius: 10vh;
+}
+
+.heading{
+    font-weight: 300;
+}
+.number{
+    color: rgba(241, 109, 241, 0.885);
+    font-weight: 300;
+}
+
+/* For tablet screens (max-width: 1024px) */
+@media (max-width: 840px) {
+    .component {
+        width: calc(33.33% - 20px); /* 3 components per row */
+   
+    }
+
+    .child1 h4 {
+        font-size: 3vh; /* Slightly smaller font for headings */
+    }
+}
+
+/* For smaller tablets and large mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .component {
+        width: calc(50% - 20px); /* 2 components per row */
+    }
+
+    .child1 h4 {
+        font-size: 2.8vh; /* Smaller heading font */
+    }
+}
+
+/* For mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .component {
+        width: 100%; /* 1 component per row for mobile */
+    }
+    .child1 h4 {
+        font-size: 2.5vh; /* Even smaller heading font */
+    }
+}

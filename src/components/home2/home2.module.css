@@ -1,28 +1,22 @@
-
 .container{
-    /* background: red; */
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    /* width: 100vh; */
+    justify-content: space-around;
     height: 90vh;
-
 }
+
 .textContainer{
-    /* background: green; */
-    /* padding: 20px; */
-    /* flex: 1; */
     width: 40%;
-    /* text-align:center; */
+    /* background-color: red; */
 }
 
 .textContainer p{
     font-size: medium;
     line-height: 1.5;
+
 }
 
 .imgContainer{
-    /* background-color: rgb(15, 89, 186); */
     background-position: center;
     background-image: url("/vector.svg");
     background-repeat: no-repeat;
@@ -31,52 +25,187 @@
     height: 50vh;
     justify-content: center;
     align-items: center;
+    /* background-color: aqua; */
 }
 
 .t1{
     flex: 1;
     padding: 20px;
 }
+
 .t2{
     flex: 1;
-    padding-left: 60px ;
+    padding-left: 60px;
 }
 
-/* .imgContainer img{
-    width: 60vh;
-    height: 50vh;
 
-} */
 
-.textContainer button{
-    background-color: rgb(118, 28, 235);
-    height: 50px;
-    width: 200px;
-    border-radius: 25px;
-    border: none;
-    color: white;
-    
-}
-
-.textContainer button:hover{
-    cursor: pointer;
-    height: 55px;
-    width: 205px;
-    margin-top: -5px;
-    font-size: medium;
-    border-radius: 30px;
-    /* box-shadow: 0px 0px 25px 0px rgb(255, 255, 255); */
-    
-}
 
 .img1{
     height: 500px;
     width: 500px;
 }
+
 .divider{
-    /* color: white; */
-    background-image:url("/divider.png") ;
-    /* width: 60vh; */
+    background-image: url("/divider.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     z-index: 1;
+    
+}
+
+
+
+
+
+
+.textContainer button {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ensure text stays centered vertically */
+    /* min-width: 35vh; */
+    /* height: 100%; */
+    padding: 2vh 5vh;
+    font-size: 3vh;
+    font-weight: 300;
+    border-radius: 3.9vh;
+    color: white;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.797);
+    transition: background-color 2s, color 2s; /* Transition for background color and text color */
+    position: relative; /* Needed for the ::before pseudo-element */
+    overflow: hidden; /* Prevents overflow of the pseudo-element */
+    z-index: 1; /* Ensure text remains above the ::before pseudo-element */
+}
+
+.textContainer button:hover {
+    color: white; /* Make text white on hover */
+    box-shadow: 0px 0px 100px -20px white; 
+}
+.textContainer button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%; /* Start outside of the element  */
+    width: 0%;
+    height: 100%;
+    background-color: rgba(118, 28, 235, 0.822);
+    z-index: -1; /* Lower z-index to ensure background goes behind the text  */
+    transition: width 0.2s ease-in-out, left 0.2s ease-in-out;  /*Animate width and left */
+}
+.textContainer button:hover::before {
+    left: 0; /* Move the starting point back to the left  */
+    width: 100%; /* Expand the width to 100%, filling both left and right sides  */
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries for important dimensions */
+
+@media (max-width: 1270px) {
+    .imgContainer{
+        height: 30vh;
+        width: 50%;
+        /* background-color: rgb(19, 122, 122); */
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .imgContainer{
+        display:none; /* Hide imgContainer after 1024px */
+    }
+    .textContainer{
+        width: 80%; /* Increase width of textContainer to 80% */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto; /* Center the textContainer */
+    }
+    .divider{
+        height: 70vh; /* Adjust height of divider */
+    }
+}
+
+@media (max-width: 768px) {
+    .imgContainer{
+        width: auto;
+    }
+    .divider{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 670px) {
+    .divider{
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .textContainer {
+        width: 90%; /* Set textContainer width to 90% */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto; /* Center the textContainer */
+        /* margin-right: -7vh; */
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .textContainer {
+        width: 90%; /* Set textContainer width to 95% */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto; /* Ensure it's centered */
+        /* margin-right: -24vh; */
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .textContainer {
+        width: 90%; /* Full width for smallest screens */
+        display: flex;
+        font-size: 3vh;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto; /* Keep centered */
+        /* margin-right: -36vh; */
+        /* background-color: blue; */
+    }
 }

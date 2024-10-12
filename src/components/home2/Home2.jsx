@@ -26,6 +26,7 @@ const Home2 = () => {
         <div className={styles.divider}>
             {/* <Image src="/divider.png" alt="" width={100} height={100} /> */}
         </div>
+        <br /><br /><br /><br />
     </div>
     </>
   )
