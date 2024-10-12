@@ -9,9 +9,9 @@ const DashboardPage = () => {
     <>
     {/* <Navbar/> */}
     <div className={styles.container}>
-      <div className={styles.child1}>
+      {/* <div className={styles.child1}>
         <Sidebar/>
-      </div>
+      </div> */}
       <div className={styles.child2}>
         <SettingsPage/> 
       </div>
