@@ -47,13 +47,13 @@ const Navbar = () => {
           </Link>
         </div>
         <div className={styles.content_items}>
-          <Link href="/#contact" passHref onClick={handleLinkClick}>
-            Contact
+          <Link href="/wallet" passHref onClick={handleLinkClick}>
+            Wallet
           </Link>
         </div>
         <div className={styles.content_items}>
-          <Link href="/wallet" passHref onClick={handleLinkClick}>
-            Wallet
+          <Link href="/#contact" passHref onClick={handleLinkClick}>
+            Contact Us
           </Link>
         </div>
       </div>
@@ -83,13 +83,13 @@ const Navbar = () => {
               </Link>
             </div>
             <div className={styles.content_items}>
-              <Link href="/#contact" passHref onClick={handleLinkClick} className={styles.links}>
-                Contact
+              <Link href="/wallet" passHref onClick={handleLinkClick} className={styles.links}>
+                Wallet
               </Link>
             </div>
             <div className={styles.content_items}>
-              <Link href="/wallet" passHref onClick={handleLinkClick} className={styles.links}>
-                Wallet
+              <Link href="/#contact" passHref onClick={handleLinkClick} className={styles.links}>
+                Contact Us
               </Link>
             </div>
           </div>
