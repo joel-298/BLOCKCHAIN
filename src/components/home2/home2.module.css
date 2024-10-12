@@ -82,6 +82,7 @@
 .textContainer button:hover {
     color: white; /* Make text white on hover */
     box-shadow: 0px 0px 100px -20px white; 
+    cursor: pointer;
 }
 .textContainer button::before {
     content: '';

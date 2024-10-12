@@ -18,7 +18,7 @@ const DashboardPage = () => {
       </div>
       <div className={styles.child2}>
         <Accounts/>
-        <SearchAccountPage/>
+        {/* <SearchAccountPage/> */}
         <Activity/>
         <Related_wallets/>
       </div>

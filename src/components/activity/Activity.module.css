@@ -13,7 +13,11 @@
     border-radius: 2vh;
     margin-top: -1.5vh;
 }
-
+.child1 h4 {
+    font-weight: 500;
+    margin-left: 1vh;
+    font-size: 2.3vh;
+}
 
 .child2 {
     /* background-color: brown; */
@@ -39,7 +43,56 @@
 }
 
 
+.table_container_child3 {
+    padding: 0vh 3vh;
+    padding-bottom: 2vh;
+    text-align: center;
+    border-collapse: collapse; /* This ensures that borders between cells are merged */
+    border-spacing: 0; /* Ensures there's no space between borders */
+}
 
+.table_container_child3 table {
+    border-collapse: collapse; /* Ensures that borders are applied properly */
+    width: 100%; /* Optional: Make sure the table spans the full width */
+}
+
+.table_container_child3 th,
+.table_container_child3 td {
+    border: 1px solid #ddd; /* Adds 1px border between rows and columns */
+    padding: 1vh; /* Adds some padding to cells */
+    text-align: center; /* Ensures text is centered */
+}
+
+.sameLine {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Aligns the image and text vertically */
+    column-gap: 1vh; /* Adds space between the image and the text */
+}
+
+.child_3 {
+    width: 20vw; /* Fixed width for table cells */
+    padding: 1vh 2vh; /* Consistent padding for cells */
+    border-radius: 0.5vh; /* Slightly rounded corners for child elements */
+    /* background-color: red; */
+}
+
+.child3 h4{
+    margin: 3vh 0vh;
+    /* background-color: black; */
+    font-size: 2vh;
+    font-weight: 500;
+
+}
+.sameLine h3{
+    font-size: 2.5vh;
+    font-weight: 300;
+}
+.img {
+    height: 20px;
+    width: 20px;
+    border-radius: 5vh; /* Rounded corners for the image */
+}
 
 @media (max-width: 1023px) { 
     .container {
@@ -55,9 +108,11 @@
     .table_container {
         padding: 0 1vh;
         /* background-color: black; */
-        /*add a column gap space between proerty*/
     }
-
+    .table_container_child3{
+        padding: 0 1vh;
+        /* background-color: black; */
+    }
     .box21 .columns1 {
         padding: 0.5vh 0vh; /* Reduce padding for table columns */
         min-width: 20%;
@@ -73,6 +128,28 @@
         width: auto;
     }
 }
+
+@media (max-width:800px){
+   .table_container_child3 {
+        overflow-x: auto; /* Enables horizontal scrolling */
+        width: 100%; /* Full width */
+        padding-bottom: 2vh;
+    }
+    
+    /* Scrollbar styles */
+   .table_container_child3::-webkit-scrollbar {
+        height: 0.5vh; /* Height of the horizontal scrollbar */
+    }
+    
+    /* Thumb style */
+   .table_container_child3::-webkit-scrollbar-thumb {
+        background: #888888; /* Grey color for the scrollbar thumb */
+        border-radius: 10px; /* Optional: Rounded corners for the scrollbar */
+    }
+    
+}
+
+
 @media (max-width: 600px) {
     .table_container table {
         width: 100%;
@@ -110,4 +187,9 @@
         text-align: right; /* Align data to the right */
         font-size: 2vh;
     }
+}
+
+
+.child3_thead{
+    background-color: rgb(133, 3, 255);
 }
