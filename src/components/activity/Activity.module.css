@@ -1,0 +1,113 @@
+/* right now the table is horizontal */
+
+
+.container {
+    background: rgb(20, 20, 20);
+    margin: 1%;
+    padding: 3vh 8vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5vh;
+    width: 98% ;
+    height: auto;
+    border-radius: 2vh;
+    margin-top: -1.5vh;
+}
+
+
+.child2 {
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+}
+
+.table_container {
+    /* background-color: blue; */
+    padding:0vh 3vh;
+    padding-bottom: 2vh;
+    text-align: center;
+    border-collapse: collapse;
+}
+.columns1 , .columns2 {
+    /* background-color: red; */
+    padding:1vh 10vh;
+    width: 25vw;
+}
+.box21 .columns1 {
+    font-weight: 300;
+    color: rgb(147, 147, 147);
+}
+
+
+
+
+@media (max-width: 1023px) { 
+    .container {
+        padding: 3vh 1vh;
+    }
+    .child2 {
+        margin-top: 1vh;
+        /* background-color: red; */
+        display: flex;
+        width: 100%;
+    }
+
+    .table_container {
+        padding: 0 1vh;
+        /* background-color: black; */
+        /*add a column gap space between proerty*/
+    }
+
+    .box21 .columns1 {
+        padding: 0.5vh 0vh; /* Reduce padding for table columns */
+        min-width: 20%;
+        width: 25vw;
+        font-size: 2vh; /* Adjust font size for the table */
+        /* background-color: blue; */
+    }
+
+    .box21 .columns2 {
+        padding: 0.5vh 0vh;
+        font-size: 2vh;
+        min-width: 20%;
+        width: auto;
+    }
+}
+@media (max-width: 400px) {
+    .table_container table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .table_container thead {
+        display: none; /* Hide table headers on small screens */
+    }
+
+    .table_container tbody tr {
+        display: flex;
+        flex-direction: column; /* Stack rows vertically */
+        margin-bottom: 2vh; /* Add spacing between rows */
+    }
+
+    .table_container tbody td {
+        display: flex;
+        justify-content: space-between; /* Align label and data */
+        padding: 1vh 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .table_container tbody td::before {
+        content: attr(data-label); /* Use the data-label attribute for headers */
+        flex-basis: 50%;
+        text-align: left;
+        font-weight: bold;
+        color: #ddd;
+        padding-right: 1vh;
+    }
+
+    .columns2 {
+        flex-basis: 50%;
+        text-align: right; /* Align data to the right */
+        font-size: 2vh;
+    }
+}

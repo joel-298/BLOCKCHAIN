@@ -1,0 +1,12 @@
+.container {
+    background: rgb(20, 20, 20);
+    margin: 1%;
+    padding: 3vh 8vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5vh;
+    width: 98% ;
+    height: auto;
+    border-radius: 2vh;
+    margin-top: -1.5vh;
+}

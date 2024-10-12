@@ -1,0 +1,167 @@
+.container {
+    background: rgb(20, 20, 20);
+    margin: 1%;
+    padding: 3vh 8vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5vh;
+    width: 98% ;
+    height: auto;
+    border-radius: 2vh;
+
+}
+.child1 {
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+}
+.box11{
+    /* background-color: blue; */
+    display: flex;
+    width: 40%;
+    column-gap: 2vh;
+    padding: 1vh 0vh;
+}
+.box111{
+    /* background-color: rgb(48, 48, 1); */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 1vh;
+}
+.box111 h2{
+    font-size: 3vh;
+}
+.box111 h3 {
+    font-size: 1.7vh;
+}
+.box111 h3 span{
+    border: 1px solid green;
+    background-color: rgb(198, 255, 198);
+    color: green;
+    border-radius: 1vh;
+    padding: 0.3vh;
+}
+
+.box11 .avatar{
+    height: 60px;
+    width: 60px;
+    border-radius: 100vh;
+}
+.box12{
+    display: flex;
+    width: auto;
+    /* background-color: blue; */
+}
+.box12 h4{
+    font-weight: 300;
+    margin-top: 2vh;
+    color: rgb(147, 147, 147);
+}
+
+.child2 {
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+}
+
+.table_container {
+    /* background-color: blue; */
+    padding:0vh 3vh;
+    padding-bottom: 2vh;
+    text-align: center;
+    border-collapse: collapse;
+}
+.columns1 , .columns2 {
+    /* background-color: red; */
+    width: 25vw;
+    padding:1vh 10vh;
+}
+.box21 .columns1 {
+    font-weight: 300;
+    color: rgb(147, 147, 147);
+}
+
+
+
+@media (max-width: 1023px) {
+    .container {
+        margin: 0;
+        padding: 2vh 4vh;
+        width: 100%;
+        border-radius: 1vh;
+    }
+
+    .child1 {
+        flex-direction: column;
+        row-gap: 0vh; /* Add some space between child elements */
+        /* background-color: red; */
+    }
+
+    .box11 {
+        width: 100%; /* Full width for smaller screens */
+        column-gap: 1vh; /* Reduced gap */
+        /* background-color: blue; */
+    }
+
+    .box111 h2 {
+        font-size: 2.5vh; /* Reduce font size */
+    }
+
+    .box111 h3 {
+        font-size: 1.5vh; /* Reduce font size */
+    }
+
+    .box111 h3 span {
+        font-size: 1.2vh; /* Smaller span text */
+    }
+
+    .avatar {
+        height: 50px; /* Smaller avatar */
+        width: 50px;
+    }
+
+    .box12 {
+        justify-content: center; /* Center the "Last updated" text */
+        margin-top: 1vh;
+        justify-content: end;
+        /* background-color: blue; */
+    }
+
+    .box12 h4 {
+        display: flex;
+        /* background-color: black; */
+        font-size: 2.2vh; /* Adjust text size */
+        margin-top: 0vh;
+    }
+
+    .child2 {
+        margin-top: 1vh;
+        /* background-color: red; */
+        display: flex;
+        width: 100%;
+    }
+
+    .table_container {
+        padding: 0 1vh;
+        /* background-color: black; */
+        /*add a column gap space between proerty*/
+    }
+
+    .box21 .columns1 {
+        padding: 0.5vh 0vh; /* Reduce padding for table columns */
+        min-width: 20%;
+        width: 25vw;
+        font-size: 2vh; /* Adjust font size for the table */
+        /* background-color: blue; */
+    }
+
+    .box21 .columns2 {
+        padding: 0.5vh 0vh;
+        font-size: 2vh;
+        min-width: 20%;
+        width: auto;
+    }
+}
+
+

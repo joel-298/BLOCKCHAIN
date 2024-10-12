@@ -17,8 +17,8 @@ const Home1 = () => {
                 <Image src="/arrow-bottom.svg" alt="home_image" width={0} height={0} className={styles.arrow_image}/>
             </Link>
             <div className={styles.paragraph}>
-                <p>We help companies design their</p>
-                <p>product to be ready for web3 world</p>
+                <p>We help companies design their
+                product to be ready for web3 world</p>
             </div>
         </div>
       </div>

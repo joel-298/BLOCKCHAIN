@@ -8,8 +8,8 @@ const Footer = () => {
     <div id="contact" className={styles.container}>
       <div className={styles.child1}>
         <div className={styles.heading}>
-            <h1>Web3 Space</h1>
-            <h2>Start you web3 journey right now!</h2>
+            <h1 className={styles.h1}>Web3 Space</h1>
+            <h2 className={styles.h2}>Start you web3 journey right now!</h2>
         </div>
         <div className={styles.gmail}>
             <h2>sample@gmail.com</h2>
