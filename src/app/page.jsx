@@ -11,12 +11,12 @@ const Page = () => {
   return (
     <div>
       {/* ID added to sections for scrolling */}
-      <Navbar />
-        <Home1 />
+      {/* <Navbar /> */}
+        {/* <Home1 /> */}
         <Home2 />
-        <Home3 />
+        {/* <Home3 /> */}
         <About />
-        <Footer />
+        {/* <Footer /> */}
     </div>
   );
 };

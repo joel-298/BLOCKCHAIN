@@ -29,17 +29,11 @@ a{
 
 
 .container {
-  width: 1536px;
-  margin: auto;
-  padding: auto 50px;
-  min-height:100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
+  width: 100%;
+  /* background-color: red; */
 }
 
-
+/* 
 @media (max-width:1536px) {
   .container {
       width:1366px;
@@ -68,13 +62,11 @@ a{
 }
 @media (max-width:640px) {
   .container {
-      /* background-color: purple; */
       width:475px;
   }
 }
 @media (max-width:475px) {
   .container {
-      /* background-color: purple; */
       width:380px;
   }
-}
+} */

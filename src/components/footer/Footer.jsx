@@ -13,7 +13,7 @@ const Footer = () => {
         </div>
         <div className={styles.gmail}>
             <h2>sample@gmail.com</h2>
-            <Link href="/contact" passHref><Image src="/arrow-right.svg" alt="arrow-right" width={0} height={0} className={styles.arrow_right}/></Link>
+            <Image src="/arrow-right.svg" alt="arrow-right" width={0} height={0} className={styles.arrow_right}/>
         </div>
       </div>
       <div className={styles.child2}>
