@@ -20,6 +20,7 @@ const DashboardPage = () => {
         <Accounts/>
         <SearchAccountPage/>
         <Activity/>
+        <SettingsPage/> 
         <Related_wallets/>
       </div>
     </div>

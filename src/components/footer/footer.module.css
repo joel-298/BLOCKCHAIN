@@ -1,19 +1,23 @@
 .container {
     /* Container settings */
-    height: 60vh;
-    display: flex;
+    height: auto;
     justify-content: space-between;
     padding-top: 8vh;
-    margin-top: 15vh;
-
+    margin-top: 2vh;
+    padding-bottom: 5vh;
     /* Add background image with gradient overlay */
-    background: linear-gradient( rgb(0, 0, 0), rgba(255, 255, 255, 0) 100% /* Bottom part fades into image */
+    background: linear-gradient( rgb(0, 0, 0), rgba(255, 255, 255, 0) 700% /* Bottom part fades into image */
       ),
-      url('/footer_bg.webp'); /* Path to your background image */
+      url('/giphy.webp'); /* Path to your background image */
     
     background-size: cover; /* Ensure the image covers the entire container */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent tiling */
+
+
+    border-bottom-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+    margin-bottom: 0.5vh;
 }
 
 .child1 {
@@ -106,4 +110,82 @@
 .arrow_up:hover {
     cursor: pointer;
     transition: 0.5s;
+}
+
+
+
+@media (min-width:1023px){
+    .container{
+        width: 100%;
+        display: flex;
+        padding-right: 3vh;
+        padding-left: 3vh;
+    }
+}
+@media (max-width:1023px){
+    .container{
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+    }
+    
+    .child1 {
+        width:100%;
+        justify-content: center;
+        /* background-color: red; */
+    }
+    .child1 .heading .h1, .child1 .heading .h2{
+        display: flex;
+        justify-content: center;
+        /* background-color: red; */
+        margin-left: -4vh;
+    }
+    .gmail{
+        /* min-width: ; */
+        /* background-color: red; */
+        font-size:2vh;
+        justify-content: center;
+        margin-top: -6vh;
+        padding: 0vh 2vh;
+    }
+    .child2 {
+        /* background-color: red; */
+        width: 100%;
+    }
+    .child2 .heading h2 {
+        font-weight: 500;
+        font-size: 4vh;
+        margin-bottom: 2vh;
+        display: flex;
+        justify-content: center;
+        color:  rgb(172, 109, 255);
+    }
+    .child2 .lists h3 {
+        display: flex;
+        justify-content: center;
+    }
+    .child3 {
+        /* background-color: red; */
+        width: 100%;
+    }
+    .child3 .heading h2 {
+        font-weight: 500;
+        font-size: 4vh;
+        margin-bottom: 2vh;
+        display: flex;
+        justify-content: center;
+        color: rgb(172, 109, 255);
+    }
+    .child3 .lists h3 {
+        display: flex;
+        justify-content: center;
+    }
+    .child4{
+        display: none;
+    }
+
 }

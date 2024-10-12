@@ -1,14 +1,13 @@
 .container {
-    height: 85vh;
-    width: 80vh;
-    margin: auto;
+    margin:5vh auto;
     border-radius: 5vh;
-    border: 0.3vh solid white;
-    box-shadow: 0px 0px 100px -50px white;
+    border: 0.3vh solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 100px -50px  rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(rgb(0, 0, 0),rgba(16, 0, 33, 0.36),black);
 }
 .logo_img {
     margin-top: 7vh;
@@ -86,7 +85,7 @@
 }
 .button button {
     margin-top: 1vh;
-    background-color: rgb(118, 28, 235);
+    background-color: rgba(128, 128, 128, 0.797);
     color: white;
     height: 7vh;
     width: 25vh;
@@ -94,17 +93,40 @@
     border-radius: 5vh;
     font-size: 22px;
     z-index: 1;
+    transition: background-color 1s, color 1s;
+    position: relative; /* Needed for the ::before pseudo-element */
+    overflow: hidden; /* Prevents overflow of the pseudo-element */
     animation: show-element-button 4.2s ease-in-out forwards ;
 }
 .button button:hover {
     box-shadow: 0px 0px 200px -25px white ;
     cursor: pointer; 
     transition: 0.5s;
-    z-index: 1;
-    height: 8vh;
-    width: 27vh;
-    margin-bottom: -1vh;
+    background-color: rgb(118, 28, 235);
 }
+.button button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%; /* Start from the center */
+    width: 0%; /* Initial width of 0% */
+    height: 100%;
+    background-color: rgb(118, 28, 235);
+    z-index: -1; /* Lower z-index to ensure background goes behind the text */
+    transition: width 0.2s ease-in-out, left 0.2s ease-in-out; /* Animate width and left */
+}
+
+.button button:hover::before {
+    left: 0; /* Move the starting point back to the left */
+    width: 100%; /* Expand the width to 100%, filling both left and right sides */
+}
+
+
+
+
+
+
+
 @keyframes show-element-button {
     0% {
         opacity: 0;
@@ -117,5 +139,56 @@
     100% {
         opacity: 1;
         display: visible;
+    }
+}
+
+
+
+
+@media (min-width:768px) {
+    .container {
+        height: 90vh;
+        width: 80vh;
+    }
+}
+@media (max-width:768px) {
+    .container {
+        height: auto;
+        width: 90vw;
+        margin: 2vh auto;
+        border: none;
+        border-radius: 3vh;
+        box-shadow: none;
+    }
+    
+    .logo_img {
+        margin-top: 11vh;
+        height: 15vh;
+        width: 15vh;
+    }
+
+    .content {
+        width: 90%;
+        padding: 3vh 1.5vh;
+        font-size: 4vh;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .content p {
+        font-size: 3.5vh;
+        width: 100%;
+        margin: 0;
+        margin-top: 3vh;
+    }
+
+    .button button {
+        height: 8vh;
+        width: 27vh;
+        font-size: 18px;
+        border-radius: 4vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
     }
 }
