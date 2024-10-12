@@ -1,0 +1,81 @@
+.container{
+    display: flex;
+    align-items: center;
+    gap: 16vh;
+    margin-bottom: 5vh;
+}
+
+.imgContainer{
+    flex:1;
+    position: relative;
+    padding-left: 8vh;
+}
+
+.formContainer{
+    flex: 1;
+    margin-right: 5vh;
+}
+
+.img{
+    object-fit: contain;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.form input,
+.form textarea{
+    padding: 3vh;
+    border-radius: 1vh;
+    border: none;
+    outline: none;
+    background-color: rgba(172, 175, 227, 0.216);
+    color: var(--text);
+}
+
+.form button{
+    padding: 3vh;
+    background-color: rgb(123, 53, 215);
+    color: var(--text);
+    font-weight: bold;
+    border: none;
+    border-radius:1vh;
+    cursor: pointer;
+}
+
+/* Hide image and fix form width after 1024px */
+@media (max-width: 1024px ){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgContainer{
+        display: none; /* Hide image after 1024px */
+    }
+    .form{
+        width: 70vw; /* Fix width of form */
+    }
+    .form input {
+        width: 100%; /* Ensure inputs take full width */
+    }
+}
+
+/* Further adjust form width for smaller screens */
+@media (max-width: 768px ){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .form{
+        width: 90vw; /* Fix width of form for smaller screens */
+    }
+    .form input {
+        width: 100%; /* Ensure inputs take full width */
+    }
+}

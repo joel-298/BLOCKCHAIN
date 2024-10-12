@@ -1,7 +1,8 @@
 // import React from 'react'
 import Image from "next/image";
 import styles from "./about.module.css" ; 
-import Link from "next/link" ;
+import Link from "next/link";
+
 
 const About = () => {
   return (
