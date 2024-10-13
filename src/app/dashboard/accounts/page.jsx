@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from "./dashboard.module.css"  ;
 import Sidebar from '@/components/sidebar/Sidebar';
-import SettingsPage from '@/components/settings/Settings';
 import DashboardNavbar from '@/components/dashboard_navbar/DashboardNavbar';
+import SwitchAccount from '@/components/switchaccount/SwitchAccount';
 
 const DashboardPage = () => {
   return (
@@ -13,7 +13,7 @@ const DashboardPage = () => {
         <Sidebar/>
       </div>
       <div className={styles.child2}>
-        <SettingsPage/>
+        <SwitchAccount/>
       </div>
     </div>
     </>

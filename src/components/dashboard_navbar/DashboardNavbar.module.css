@@ -1,0 +1,323 @@
+.container {
+    background-color: rgb(10, 79, 255);
+    height:7vh;
+    display: flex;
+    margin-top: 2vh ;
+    margin-bottom: 2vh;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 98%;
+    justify-content: space-between;
+}
+
+.logo_container{ 
+    height:100% ;
+    /* background-color: rgb(74, 0, 0); */
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo_img{
+    /* background-color: black; */
+    height: 100%;
+    width:100%;
+}
+.logo_img:hover{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.content{
+    background-color: rgb(50, 2, 2) ;
+    width:45%;
+    justify-content:center;
+    height: 100%;
+    font-size: 3vh;
+    z-index: 1;
+}
+.content_items,
+.search_div {
+    background-color: red;
+    align-items: center;
+    margin:0vh;
+    /* border-radius: 5vh; */
+    padding: 0vh;
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+   
+}
+.content_items .links {
+    /* background-color: blue; */
+    display: flex;
+    align-items:center;
+    margin: 0vh;
+    justify-content: center;
+    height: 100%;
+    width: 70%;
+    padding: 0.5vh;
+    border-radius: 100%;
+    background-color: rgb(28, 28, 28);
+}
+.links img {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(132, 0, 247); */
+}
+.links img:hover {
+    color: white; /* Make text white on hover */
+    box-shadow: 0px 0px 100px -50px rgb(213, 203, 239);
+    background-color: rgb(90, 90, 90); 
+    transition: 0.3s;
+}
+.content div {
+    /* background-color: brown; */
+    display: flex;
+    height:70%;
+    align-items: top;
+    padding:0vh 4vh;
+}
+
+.search_div .form {
+    /* background-color: black; */
+    display: flex;
+    width:100%;
+    height: 100%;
+    margin: 0vh;
+    padding: 0vh;
+    border-radius: 2vh;
+    margin-left: -2vh;
+    z-index: 1;
+}
+.form button {
+    height: 100%;
+    width: 6vh;
+    padding: 0.5vh;
+    border-top-left-radius: 2vh;
+    border-bottom-left-radius: 2vh;
+    background-color: rgb(28, 28, 28);
+    
+}
+.search {
+    height: 100%;
+    width: 5vh;
+    padding: 0.2vh;
+    /* background-color: blue; */
+    margin-left: 0.2vh;
+    border-radius: 100%;
+    margin-right: 0.2vh;
+}
+.form input {
+    background-color: rgb(28, 28, 28);
+    border: none;
+    outline: none; /* Removes the default focus border (outline) */
+    display: flex;
+    width: 100%; /* Sets width to full width */
+    border-top-right-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+    padding: 0.2vh 2vh;
+    color: white; /* Changes input text color to white */
+}
+
+/* Change the placeholder text color */
+.form input::placeholder {
+    color: lightgrey; /* Sets placeholder color to light grey */
+}
+
+/* Optional: Add hover and focus effects without border */
+.form input:focus, 
+.form input:hover {
+    outline: none; /* Ensure no focus outline on hover or focus */
+    box-shadow: none; /* Prevent shadow or glow effect */
+}
+.form button {
+    /* background-color: transparent; */
+    border: none;
+}
+
+.menu {
+    /* background-color: rgb(61, 2, 2); */
+    display: flex;
+    column-gap: 2vh;
+    align-items: end;
+    padding: 0vh;
+    width: 10%;
+    z-index: 1;
+    justify-content: center;
+}
+.menu:hover{ 
+    cursor: pointer;
+    transition: 0.5s;
+    color: rgb(170, 110, 234);
+}
+.menu p {
+    align-items: end;
+    font-size: 3vh;
+    padding-bottom: 2vh;
+
+}
+.menu_logo_img {
+    /* background-color: rgb(40, 0, 0); */
+    height: 50%;
+    width:35px; 
+    padding-bottom: 2vh;
+}
+
+.home{
+    /* border: 2px solid white; */
+    background-color: transparent;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 10vh;
+    margin: 1vh;
+}
+
+
+
+@media (min-width: 1023px) {
+    .nav_div {
+        display: none;
+    }
+    .content {
+        display: flex; /* or flex, depending on your layout */
+    }
+    .menu p {
+        display: flex;
+    }
+}
+
+@media (max-width: 1023px) {
+    .container {
+        background: linear-gradient(rgba(118, 28, 235, 0.306),transparent);
+        height: 15vh;
+        border-top-left-radius: 1vh;
+        border-top-right-radius: 1vh;
+        padding-right: 5vh;
+        padding-top:1.5vh;
+        padding-bottom: 1.5vh;
+    }
+    .content {
+        display: none;
+    }
+    .menu p {
+        display: none;
+    }
+    .cancel:hover {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .logo_container {
+        /* background-color: rgb(82, 0, 0); */
+        width: 30%;
+        /* display: none; */
+    }
+    .menu {
+        background-color: transparent;
+        /* display: none; */
+    }
+    .nav_div{
+        background-color: rgba(1, 0, 2, 0.98);
+        height: 100vh;
+        width: 98%;
+        position: absolute;
+        z-index: 1;
+        opacity: 1;
+        border-radius: 1vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: -3vh;
+        /* display: none; */
+    }
+    .child1 {
+        height: 15%;
+        width: 100%;
+        /* background-color: rgb(44, 1, 1); */
+        border-top-left-radius: 1vh;
+        border-top-right-radius: 1vh;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 4vh;
+        padding-right: 4vh;
+    }
+    .child1 .logo_img {
+        height: 100%;
+        width: 70%;
+        /* background-color: blue; */
+    }
+    .child1 .cancel {
+        height: 15%;
+        width: 3%;
+        /* background-color: blue; */
+        margin: auto 0vh;
+    }
+    .child2{
+        /* background-color: rgb(70, 1, 1); */
+        height: 85% ;
+        display: flex;
+        flex-direction: column;
+        padding-top: 15%;
+        row-gap: 3vh;
+    }
+    .child2 .content_items{
+        display: flex;
+        min-height:10%;
+        width: auto;
+        margin: 0vh auto;
+    }
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Ensure text stays centered vertically */
+        min-width: 35vh;
+        height: 100%;
+        padding: 1vh 5vh;
+        font-size: 4vh;
+        font-weight: 300;
+        border-radius: 2.5vh;
+
+
+        background-color: transparent;
+        transition: background-color 2s, color 2s; /* Transition for background color and text color */
+        position: relative; /* Needed for the ::before pseudo-element */
+        overflow: hidden; /* Prevents overflow of the pseudo-element */
+        z-index: 1; /* Ensure text remains above the ::before pseudo-element */
+    }
+    
+    .links:hover {
+        color: white; /* Make text white on hover */
+        box-shadow: 0px 0px 100px -20px white;
+    }
+    .links::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%; /* Start outside of the element */
+        width: 0%;
+        height: 100%;
+        background-color: rgb(118, 28, 235);
+        z-index: -1; /* Lower z-index to ensure background goes behind the text */
+        transition: width 0.2s ease-in-out, left 0.2s ease-in-out;/* Animate width and left */
+    }
+    .links:hover::before {
+        left: 0; /* Move the starting point back to the left */
+        width: 100%; /* Expand the width to 100%, filling both left and right sides */
+    }   
+
+
+    .links span {
+        position: relative;
+        z-index: 1; /* Keep the text on top of the background fill */
+    }
+}   
+
+@media (max-width:450px) {
+    .container {
+        /* background-color: blue; */
+        padding-left: 3.5vh;
+    }
+    .nav_div{
+        margin-left: -3.5vh;
+    }
+}

@@ -14,7 +14,7 @@ const Page = () => {
       <Navbar />
         <Home1 />
         <Home2 />
-        {/* <Home3 /> */}         {/*Make sure in your own pc's that this component should remain commented out until i update this */} 
+        <Home3 />        {/*Make sure in your own pc's that this component should remain commented out until i update this */} 
         <About />
         <Footer />
     </div>

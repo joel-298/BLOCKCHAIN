@@ -95,7 +95,7 @@
     border-radius: 5vh; /* Rounded corners for the image */
 }
 
-@media (max-width: 1023px) { 
+@media (max-width: 1439px) { 
     .container {
         padding: 3vh 1vh;
     }
@@ -138,7 +138,7 @@
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1439px) {
     .table_container table {
         width: 100%;
         border-collapse: collapse;

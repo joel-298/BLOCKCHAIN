@@ -1,0 +1,41 @@
+.container {
+    /* background-color: red; */
+    margin: 1%;
+    padding: 0vh 8vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5vh;
+    width: 98%;
+    height: 90vh; /* Set a fixed height for scrolling */
+    border-radius: 2vh;
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    scroll-behavior: smooth; /* Optional: Smooth scrolling effect */
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    background: rgb(20, 20, 20);
+    gap: 1.5vh;
+    width: auto ;
+    padding: 2vh;
+    box-sizing: border-box;
+    border-radius: 2vh;
+}
+
+.link img{
+    height: 5vh;
+    width: 5vh;
+    border-radius: 10vh;
+}
+
+.heading{
+    font-weight: 300;
+}
+.number{
+    color: rgba(241, 109, 241, 0.885);
+    font-weight: 300;
+}
+
+

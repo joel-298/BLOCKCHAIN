@@ -1,17 +1,33 @@
 .container{
-    height: 70vh;
+    height: auto;
     display: flex;
     align-items: center;
     background-image: url("/home3.png");
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-size: 50% 400px;
-    margin: 6vh;
+    margin: 2vh;
+    /* background-color: aqua; */
+    padding: 15vh 3vh;
+    margin-top: 0vh;
+
+
+}
+.text {
+    display: flex;
+    height: 100%;
+    width:100%;
+    /* background-color: blue; */
+    align-items: center;
 }
 .text h1{
-    font-size:8.5vh ;
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+    font-size:7vh;
     font-weight: 300;
-    margin: 10vh;
+
+    /* margin: 10vh; */
     
 
 }
@@ -20,76 +36,19 @@
 }
 
 
-@media (max-width: 1024px) {
-    
-    .text h1{
-        font-size:8vh ;
-        width: 80%;
+@media (max-width:768px){
+    .container {
+        background-image: url("/home3.png");
+        background-position: 100% 50%;
+        background-size: 60% 50vh;
+        padding: 15vh 3vh;
     }
 }
 
-@media (max-width: 768px) {
-    .container{
-        background-size: 40% 300px;
-    }
-    .text h1{
-        font-size:6vh ;
-        width: 80%;
-    }
-}
-
-
-
-
-@media (max-width: 426px) {
-    .container{
-        background-size: 50% 250px;
-        margin: 3vh;   
-        padding: 0px;
-        /*  */
-    }
-    .text h1{
-        font-size:4.5vh ;
-        width: 100%;
-        padding: 0px;
-        margin: 0px;
-    }
-}
-
-@media (max-width: 376px) {
-    .container{
-        background-size: 50% 200px;
-    }
-    .text h1{
-        font-size:4vh ;
-        width: 60%;
-    }
-}
-
-@media (max-width: 376px) {
-    .container{
-        background-size: 55% 200px;
-        margin: 0px;
-        padding: 0px;
-    }
-    .text h1{
-        font-size:3vh ;
-        width: 100%;
-        margin: 3vh;
-        
-    }
-}
-
-@media (max-width: 321px) {
-    .container{
-        background-size: 55% 170px;
-        margin: 3vh;
-        padding: 0px;
-    }
-    .text h1{
-        font-size:3vh ;
-        width: 80%;
-        margin: 0vh;
-        
+@media (max-width:669px){
+    .container {
+        background-image:none;
+        padding: 15vh 3vh;
+        margin-top: -30vh;
     }
 }
