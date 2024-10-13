@@ -131,18 +131,6 @@
 }
 
 @media (max-width:768px){
-   /* .table_container_child3 {
-        overflow-x: auto; 
-        width: 100%; 
-        padding-bottom: 2vh;
-    }
-   .table_container_child3::-webkit-scrollbar {
-        height: 0.5vh;
-    }
-   .table_container_child3::-webkit-scrollbar-thumb {
-        background: #888888;
-        border-radius: 10px;
-    } */
     .sameLine h3{
         display: none;
     }
