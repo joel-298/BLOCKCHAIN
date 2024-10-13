@@ -1,3 +1,166 @@
-.container{
-    
-}
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1255px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+  }
+  
+  .image {
+    width: 100%;  /* Ensures the image takes up the full width of the parent */
+    height: auto; /* Maintains aspect ratio */
+  }
+  
+  .form {
+    flex: 1;
+    padding: 20px;
+    height: 60vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .heading h1 {
+    font-size: 3rem;
+    color: #6b6a6a;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 300;
+  }
+  
+  .input {
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 5vh;
+    align-items: center;
+    border: none;
+    flex-direction: column;
+  }
+  
+  .input input {
+    padding: 10px;
+    width: 100%;
+    background-color: #4c4c4c;
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 2vh;
+  }
+  
+  .input button {
+    position: relative;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #6a0dad; /* Purple color */
+    border: none;
+    border-radius: 2vh;
+    width: 40%;
+    height: 7vh;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+  }
+  
+  .input button:hover {
+    background-color: #4b0082; /* Darker purple on hover */
+    transform: scale(1.1); /* Increases size slightly */
+    box-shadow: 0 0 15px rgba(106, 13, 173, 0.6); /* Adds a glowing purple shadow */
+  }
+  
+  .input button:active {
+    transform: scale(0.95); /* Button shrinks slightly when clicked */
+  }
+  
+  /* Bubble Effect */
+  .input button::before, 
+  .input button::after {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+  
+  .input button::before {
+    width: 15px;
+    height: 15px;
+    top: -10px;
+    left: 30%;
+    animation: bubble 1s infinite ease-in-out;
+  }
+  
+  .input button::after {
+    width: 20px;
+    height: 20px;
+    bottom: -10px;
+    left: 60%;
+    animation: bubble 1.5s infinite ease-in-out;
+  }
+  
+  /* Keyframes for bubble animation */
+  @keyframes bubble {
+    0% {
+      transform: scale(0.5) translateY(0);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2) translateY(-10px);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.8) translateY(-20px);
+      opacity: 0;
+    }
+  }
+  
+  
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .img {
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+  
+    .form {
+      max-width: 100%;
+    }
+  
+    .heading h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .heading h1 {
+      font-size: 1.2rem;
+    }
+  
+    .input input, .input button {
+      font-size: 0.9rem;
+    }
+  }
+  
