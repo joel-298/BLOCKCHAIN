@@ -7,7 +7,7 @@ import DashboardNavbar from '@/components/dashboard_navbar/DashboardNavbar';
 const DashboardPage = () => {
   return (
     <>
-    {/* <DashboardNavbar/> */}
+    <DashboardNavbar/>
     <div className={styles.container}>
       <div className={styles.child1}>
         <Sidebar/>

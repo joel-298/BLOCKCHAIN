@@ -11,7 +11,7 @@ const DashboardPage = () => {
 
   return (
     <>
-    {/* <DashboardNavbar/> */}
+    <DashboardNavbar/>
     <div className={styles.container}>
       <div className={styles.child1}>
         <Sidebar/>

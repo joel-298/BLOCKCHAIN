@@ -7,7 +7,7 @@ import SearchAccountPage from '@/components/search_account/SearchAccount';
 const DashboardPage = () => {
   return (
     <>
-    {/* <DashboardNavbar/> */}
+    <DashboardNavbar/>
     <div className={styles.container}>
       <div className={styles.child1}>
         <Sidebar/>
