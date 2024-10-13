@@ -1,12 +1,126 @@
 .container {
-    background: rgb(20, 20, 20);
-    margin: 1%;
-    padding: 3vh 8vh;
     display: flex;
     flex-direction: column;
-    row-gap: 1.5vh;
-    width: 98% ;
-    height: auto;
-    border-radius: 2vh;
-    margin-top: 1vh;
-}
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: black;
+  }
+  
+  .flexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: green; */
+    width: 100%;
+  }
+  
+  .gifi {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: green; */
+  }
+
+  .child{
+    display: flex;
+    flex-direction: column;
+    /* background: red; */
+    height: 80%;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+  }
+  
+  .imgContainer {
+    width: 30%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 100%;
+    
+  }
+  
+  .profileImage {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .fileInput {
+    display: none;
+  }
+  
+  .form {
+    margin-top: 30px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: blue; */
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+  }
+  
+  .usernameInput {
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    width: 45%;
+    background-color: #333;
+    color: #fff;
+    margin-top: 10px;
+    outline: none;
+  }
+  
+  .submitButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #6a0dad;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #4b0082;
+  }
+  
+  .successMessage {
+    margin-top: 20px;
+    color: #9476b9;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: cursive;
+  }
+  
+  @media (max-width: 768px) {
+    .usernameInput {
+      width: 100%;
+    }
+  
+    .submitButton {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  
+    .profileImage {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .gifi {
+      display: none;
+    }
+  }
+  
