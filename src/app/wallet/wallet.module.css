@@ -1,5 +1,5 @@
 .container {
-    margin:5vh auto;
+    /* margin:5vh auto; */
     border-radius: 5vh;
     border: 0.3vh solid rgb(255, 255, 255);
     box-shadow: 0px 0px 100px -50px  rgb(255, 255, 255);
@@ -62,12 +62,14 @@
     font-weight: 500;
 }
 .content p {
-    margin-top: 1vh;
+    margin-top: 3vh;
     display: flex;
-    font-size: 2.3vh;
+    font-size: 2.45vh;
     width: 70%;
     padding: 0vh;
     text-align: center;
+    /* background-color: blue; */
+    justify-content: center;
 }
 @keyframes show-element-content {
     0% {
@@ -121,12 +123,6 @@
     width: 100%; /* Expand the width to 100%, filling both left and right sides */
 }
 
-
-
-
-
-
-
 @keyframes show-element-button {
     0% {
         opacity: 0;
@@ -147,8 +143,9 @@
 
 @media (min-width:768px) {
     .container {
-        height: 90vh;
-        width: 80vh;
+        width: 100vw;
+        height: 98vh;
+        border-color:transparent ;
     }
 }
 @media (max-width:768px) {

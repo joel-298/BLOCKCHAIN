@@ -44,6 +44,7 @@
 
 
 .table_container_child3 {
+    margin-top: 3vh;
     padding: 0vh 3vh;
     padding-bottom: 2vh;
     text-align: center;
@@ -70,15 +71,15 @@
     column-gap: 1vh; /* Adds space between the image and the text */
 }
 
-.child_3 {
-    width: 20vw; /* Fixed width for table cells */
-    padding: 1vh 2vh; /* Consistent padding for cells */
-    border-radius: 0.5vh; /* Slightly rounded corners for child elements */
-    /* background-color: red; */
-}
+.child3 .h4{
+    margin: 2vh 0vh;
+    /* background-color: black; */
+    font-size: 2vh;
+    font-weight: 500;
 
+}
 .child3 h4{
-    margin: 3vh 0vh;
+    margin: 0vh 0vh;
     /* background-color: black; */
     font-size: 2vh;
     font-weight: 500;
@@ -129,22 +130,21 @@
     }
 }
 
-@media (max-width:800px){
-   .table_container_child3 {
-        overflow-x: auto; /* Enables horizontal scrolling */
-        width: 100%; /* Full width */
+@media (max-width:768px){
+   /* .table_container_child3 {
+        overflow-x: auto; 
+        width: 100%; 
         padding-bottom: 2vh;
     }
-    
-    /* Scrollbar styles */
    .table_container_child3::-webkit-scrollbar {
-        height: 0.5vh; /* Height of the horizontal scrollbar */
+        height: 0.5vh;
     }
-    
-    /* Thumb style */
    .table_container_child3::-webkit-scrollbar-thumb {
-        background: #888888; /* Grey color for the scrollbar thumb */
-        border-radius: 10px; /* Optional: Rounded corners for the scrollbar */
+        background: #888888;
+        border-radius: 10px;
+    } */
+    .sameLine h3{
+        display: none;
     }
     
 }
@@ -191,5 +191,5 @@
 
 
 .child3_thead{
-    background-color: rgb(133, 3, 255);
+    background-color: rgb(132, 0, 255);
 }

@@ -72,7 +72,7 @@
     border-radius: 3.9vh;
     color: white;
     border: none;
-    background-color: rgba(128, 128, 128, 0.797);
+    background-color: rgba(118, 28, 235, 0.822);
     transition: background-color 2s, color 2s; /* Transition for background color and text color */
     position: relative; /* Needed for the ::before pseudo-element */
     overflow: hidden; /* Prevents overflow of the pseudo-element */
