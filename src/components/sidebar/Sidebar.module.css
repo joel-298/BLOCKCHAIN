@@ -3,4 +3,128 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 2vh 1vh;
 }
+.child1{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    padding: 1vh;
+    align-items: center;
+    justify-content: center;
+}
+.link {
+    display: flex;
+    height: 49%;
+    width: 100%;
+    margin: 0vh;
+    border-radius: 2vh;
+}
+.box1 , .box2{
+    /* background-color: red; */
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0vh;
+    padding: 1.7vh 2vh;
+    margin-top: 1vh;
+    border-radius: 2vh;
+    background: rgb(20, 20, 20);
+
+    transition: background-color 2s, color 2s; /* Transition for background color and text color */
+    position: relative; /* Needed for the ::before pseudo-element */
+    overflow: hidden; /* Prevents overflow of the pseudo-element */
+    z-index: 1; /* Ensure text remains above the ::before pseudo-element */
+}
+.box1:hover , .box2:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    color: white; /* Make text white on hover */
+    box-shadow: 0px 0px 100px -50px rgb(213, 203, 239);
+}
+
+
+.box1::before , .box2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%; /* Start outside of the element */
+    width: 0%;
+    height: 100%;
+    background-color: rgb(28, 28, 28);
+    z-index: -1; /* Lower z-index to ensure background goes behind the text */
+    transition: width 0.2s ease-in-out, left 0.2s ease-in-out;/* Animate width and left */
+}
+.box1:hover::before  ,.box2:hover::before {
+    left: 0; /* Move the starting point back to the left */
+    width: 100%; /* Expand the width to 100%, filling both left and right sides */
+}  
+
+
+
+.document_img , .settings_img {
+    height: 3.4vh;
+    width: 3.4vh;
+}
+.box1 .link h3, .box2 .link h3{
+    font-size: 2.7vh;
+    font-weight: 300;
+}
+
+
+
+
+
+.child2 {
+    /* background-color: brown; */
+    display: flex;
+    column-gap: 1vh;
+    padding: auto;
+    border-radius: 2vh;
+    height: 8vh;
+    padding-left: 1vh;
+    align-items: center;
+    transition: background-color 2s, color 2s; /* Transition for background color and text color */
+    position: relative; /* Needed for the ::before pseudo-element */
+    overflow: hidden; /* Prevents overflow of the pseudo-element */
+    z-index: 1; /* Ensure text remains above the ::before pseudo-element */
+}
+.child2 .avatar_img {
+    height: 5vh;
+    width: 5vh;
+    border-radius: 100%;
+}
+.child2 h2{
+    font-size: 2.8vh;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    overflow: hidden;
+    font-weight: 300;
+    margin-left: 1.5vh;
+}
+.child2:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    color: white; /* Make text white on hover */
+    box-shadow: 0px 0px 100px -50px rgb(213, 203, 239);
+}
+
+
+.child2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%; /* Start outside of the element */
+    width: 0%;
+    height: 100%;
+    background-color: rgb(28, 28, 28);
+    z-index: -1; /* Lower z-index to ensure background goes behind the text */
+    transition: width 0.2s ease-in-out, left 0.2s ease-in-out;/* Animate width and left */
+}
+.child2:hover::before {
+    left: 0; /* Move the starting point back to the left */
+    width: 100%; /* Expand the width to 100%, filling both left and right sides */
+}  

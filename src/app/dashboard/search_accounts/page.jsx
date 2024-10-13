@@ -1,17 +1,17 @@
 import React from 'react'
 import styles from "./dashboard.module.css"  ;
-import Navbar from '@/components/navbar/Navbar';
 import Sidebar from '@/components/sidebar/Sidebar';
+import DashboardNavbar from '@/components/dashboard_navbar/DashboardNavbar';
 import SearchAccountPage from '@/components/search_account/SearchAccount';
 
 const DashboardPage = () => {
   return (
     <>
-    {/* <Navbar/> */}
+    {/* <DashboardNavbar/> */}
     <div className={styles.container}>
-      {/* <div className={styles.child1}>
+      <div className={styles.child1}>
         <Sidebar/>
-      </div> */}
+      </div>
       <div className={styles.child2}>
         <SearchAccountPage/>
       </div>
@@ -21,10 +21,3 @@ const DashboardPage = () => {
 }
 
 export default DashboardPage ;
-
-
-// transactions
-// multiaccounts
-// NFT'S
-// game 
-// follow 
