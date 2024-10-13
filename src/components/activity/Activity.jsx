@@ -46,8 +46,8 @@ const Activity = () => {
                         <tr className={styles.box21}>
                             <td className={`${styles.child_3} ${styles.child3_thead}`}>
                                 <div className={styles.sameLine}>
-                                <Image src="/Circular_upward.svg" alt="img" width={0} height={0} className={styles.img} />
-                                <h3>&nbsp;&nbsp;Sent</h3>
+                                    <Image src="/Circular_upward.svg" alt="img" width={0} height={0} className={styles.img} />
+                                    <h3>&nbsp;&nbsp;Sent</h3>
                                 </div>
                             </td>
                             <td className={`${styles.child_3}`} data-label="Sent"><h4>-0,01 ETH</h4></td>
