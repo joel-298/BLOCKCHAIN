@@ -37,16 +37,28 @@ const DashboardNavbar = () => {
 
       <div className={styles.content}>
         <div className={styles.content_items}>
- 
+          <Link href="/" passHref>
+            <Image src="/home.svg" alt="Logo" width={0} height={0} className={styles.home_img} />
+          </Link>
         </div>
         <div className={styles.search_div}>
-
+          <form action="/dashboard/search_accounts" className={styles.form}>
+            <button type='submit'>            
+              <Image src="/SEARCH1.svg" alt="Logo" width={0} height={0} className={styles.home_img} />
+            </button>
+            <input type="text" placeholder='seacrh accounts'/>
+          </form>
         </div>
       </div>
 
       <div className={styles.menu} onClick={toggleNavVisibility}>
         <Image src="/menu.svg" alt="Menu" width={0} height={0} className={styles.menu_logo_img} />
       </div>
+
+
+
+
+
 
       {navVisible && (
         <div className={styles.nav_div}>

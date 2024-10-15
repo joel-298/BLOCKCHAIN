@@ -15,7 +15,7 @@ const About = () => {
         <div className={styles.more_about}>
           <Link href="/about" passHref className={styles.link}>
             <h2>More About Us </h2>
-            <Image src="/arrow-right.svg" alt="arrow-right" width={0} height={0} className={styles.arrow} />
+            {/* <Image src="/arrow-right.svg" alt="arrow-right" width={0} height={0} className={styles.arrow} /> */}
           </Link>
         </div>
       </div>

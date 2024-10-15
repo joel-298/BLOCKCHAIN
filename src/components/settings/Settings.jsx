@@ -32,23 +32,23 @@ const SettingsPage = () => {
           <Image src="/Singing Contract.gif" height={550} width={600} />
         </div>
         <div className={styles.child}>
-        <div className={styles.imgContainer}>
-          <Image 
-            src={profileImage} 
-            alt="Profile Image" 
-            height={100} 
-            width={100} 
-            className={styles.profileImage} 
-          />
-          <label htmlFor="imageUpload">
+          <div className={styles.imgContainer}>
             <Image 
-              src="/edit.svg" 
-              alt="Edit Icon" 
-              height={50} 
-              width={50} 
-              className={styles.editIcon} 
+              src={profileImage} 
+              alt="Profile Image" 
+              height={100} 
+              width={100} 
+              className={styles.profileImage} 
             />
-          </label>
+            <label htmlFor="imageUpload">
+              <Image 
+                src="/edit.svg" 
+                alt="Edit Icon" 
+                height={50} 
+                width={50} 
+                className={styles.editIcon} 
+                />
+            </label>
           <input 
             type="file" 
             id="imageUpload" 
@@ -59,7 +59,7 @@ const SettingsPage = () => {
         <div className={styles.form}>
           <input 
             type="text" 
-            placeholder='Enter your name' 
+            placeholder='Enter your new name' 
             value={username}
             onChange={handleUsernameChange} 
             className={styles.usernameInput}

@@ -68,7 +68,7 @@
     padding: 10px;
     font-size: 1rem;
     color: white;
-    background-color: #6a0dad; /* Purple color */
+    background-color: rgb(118, 28, 235);
     border: none;
     border-radius: 2vh;
     width: 40%;
@@ -79,9 +79,9 @@
   }
   
   .input button:hover {
-    background-color: #4b0082; /* Darker purple on hover */
+    background-color: #b041ff; /* Darker purple on hover */
     transform: scale(1.1); /* Increases size slightly */
-    box-shadow: 0 0 15px rgba(106, 13, 173, 0.6); /* Adds a glowing purple shadow */
+    box-shadow: 0px 0px 100px -18px rgba(185, 88, 255, 0.6); /* Adds a glowing purple shadow */
   }
   
   .input button:active {

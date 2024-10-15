@@ -53,7 +53,7 @@
     left: 50%; /* Start outside of the element */
     width: 0%;
     height: 100%;
-    background-color: rgb(28, 28, 28);
+    background-color: rgb(77, 77, 77);
     z-index: -1; /* Lower z-index to ensure background goes behind the text */
     transition: width 0.2s ease-in-out, left 0.2s ease-in-out;/* Animate width and left */
 }
@@ -120,7 +120,7 @@
     left: 50%; /* Start outside of the element */
     width: 0%;
     height: 100%;
-    background-color: rgb(28, 28, 28);
+    background-color: rgb(77, 77, 77);
     z-index: -1; /* Lower z-index to ensure background goes behind the text */
     transition: width 0.2s ease-in-out, left 0.2s ease-in-out;/* Animate width and left */
 }
