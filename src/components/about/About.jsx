@@ -10,8 +10,7 @@ const About = () => {
       <hr />
       <div className={styles.text}>
         <h1>About Us</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis fugit nostrum optio magni, rem voluptatibus ipsam hic ea delectus veritatis tenetur adipisci ab distinctio alias quibusdam cum! Libero, eius ab.
-        Ipsa beatae dolorum nobis suscipit doloremque nihil repudiandae, quo officiis nesciunt eos ducimus delectus dolorem odio laudantium impedit placeat distinctio. Distinctio amet quisquam eos perferendis eaque suscipit culpa consequuntur debitis!</p>
+        <p>Web3 Space is a decentralized, user-friendly platform designed to simplify the blockchain experience for everyone, especially those new to Web3. Our mission is to break down the barriers to blockchain adoption by offering a seamless and secure onboarding process, enhanced with features that make blockchain transactions as easy as possible.</p>
         <br />
         <div className={styles.more_about}>
           <Link href="/about" passHref className={styles.link}>

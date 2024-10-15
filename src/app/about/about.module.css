@@ -1,0 +1,122 @@
+.container{
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 250vh;
+}
+.child1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background: green; */
+    margin: 20vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+}
+.heading1{
+    font-size: 3vh;
+}
+.content{
+    /* background: blue; */
+    text-align: center;
+    font-size: 2.7vh;
+    font-weight: 300;
+    margin: 20px;
+    padding: 20px;
+}
+.child2 {
+    
+    height: 70%;
+    /* background: blueviolet; */
+    width: 70%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+.heading2{
+    margin-bottom: 10vh;
+}
+
+.team {
+    display: flex;
+    /* background: green; */
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping */
+    width: 80%; /* Full width for the team container */
+}
+
+.team div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 39%; 
+    background-color: rgba(41, 40, 40, 0.907);
+    border-radius: 10px;
+    height: 47%;
+    gap: 20px;
+    /* border: 5px solid black; */
+}
+
+.img{
+    border-radius: 100%;
+}
+
+
+
+
+
+
+/* For screens larger than 1200px */
+@media (min-width: 1200px) {
+    .container {
+        height: 200vh; /* Adjust height for larger screens */
+    }
+    .child1 {
+        margin-left: 25vh;
+        margin-right: 25vh;
+    }
+}
+
+/* For tablet screens and medium-sized devices (768px to 1200px) */
+@media (max-width: 1200px) {
+    .child1 {
+        margin-left: 10vh;
+        margin-right: 10vh;
+    }
+    .child2 {
+        width: 80%; /* Reduce width for better fit */
+    }
+    .team div {
+        width: 45%; /* Slightly bigger divs for better spacing */
+    }
+}
+
+/* For mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        height: auto; /* Allow auto height for mobile */
+    }
+    .child1 {
+        margin: 5vh; /* Reduce margin for mobile screens */
+    }
+    .child2 {
+        width: 90%; /* Make the child take almost full width */
+    }
+    .team {
+        flex-direction: column; /* Stack items vertically */
+    }
+    .team div {
+        width: 90%; /* Make each div take the full width on mobile */
+        height: auto; /* Allow auto height for mobile */
+    }
+}
+
+
+

@@ -1,10 +1,54 @@
+import Footer from '@/components/footer/Footer';
+import Navbar from '@/components/navbar/Navbar';
 import React from 'react'
+import styles from './about.module.css'
+import Image from 'next/image';
 
 const AboutPage = () => {
   return (
-    <div>
-      ABOUT PAGE
+    <>
+    <Navbar />
+    <div className={styles.container}>
+      
+      <div className={styles.child1}>
+        <div className={styles.heading1}>
+          <h1>About Web3 Space</h1>
+        </div>
+        <div className={styles.content}>
+          <p>Web3 Space is a decentralized, user-friendly platform designed to simplify the blockchain experience for everyone, especially those new to Web3. Our mission is to break down the barriers to blockchain adoption by offering a seamless and secure onboarding process, enhanced with features that make blockchain transactions as easy as possible.</p>
+          <br /><br />
+          <p>At Web3 Space, we understand that the complexity of blockchain technology can be intimidating for non-technical users. That's why we've built a platform that offers one-click account creation, smart wallet integration, and the ability to buy crypto with fiat currencies—all with the simplicity of Web2 services. No more complicated wallet addresses or confusing transaction processes. With Web3 Space we bring the best of blockchain directly to your fingertips.</p>
+
+        </div>
+      </div>
+
+      <div className={styles.child2}>
+        <div className={styles.heading2}><h1>Our Team</h1></div>
+        <div className={styles.team}>
+          <div>
+          <Image src="/noavatar.png" alt="" height={120} width={120} className={styles.img} />
+            <p>joel</p>
+          </div>
+          <div>
+          <Image src="/noavatar.png" alt="" height={120} width={120} className={styles.img} />
+            <p>kashish</p>
+          </div>
+          <div>
+          <Image src="/noavatar.png" alt="" height={120} width={120} className={styles.img} />
+            <p>kavyam</p>
+          </div>
+          <div>
+            <Image src="/noavatar.png" alt="" height={120} width={120} className={styles.img} />
+            <p>lokesh</p>
+          </div>
+        </div>
+      </div>  
     </div>
+
+    <Footer /> 
+    
+    </>
+    
   )
 }
 
