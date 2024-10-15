@@ -58,6 +58,17 @@
     border-radius: 5vh;
 }
 
+/*WORKING ON BACKGROUND COLOR OF DASHBOARD_NAVBAR*/
+/* .content_items img:hover {
+    background-color: rgb(77, 77, 77);
+}
+.menu_logo_img:hover{
+    background-color: rgb(77, 77, 77);
+}
+.form:hover{
+    background-color: rgb(77, 77, 77);
+} */
+
 .search_div{
     display: flex;
     /* background-color: rgb(81, 0, 0); */
@@ -277,7 +288,7 @@
         padding-left: 0vh;
     }
 }
-@media (max-width:420px){
+@media (max-width:460px){
     .logo_img{
         /* background-color: brown; */
         margin-left: -1vh;
