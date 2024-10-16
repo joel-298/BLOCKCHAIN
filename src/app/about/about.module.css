@@ -4,20 +4,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 250vh;
+    height: auto;
+    overflow: hidden;
+    padding: 5vh 1vh;
+    
 }
 .child1{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* background: green; */
-    margin: 20vh;
-    margin-left: 30vh;
-    margin-right: 30vh;
+    /* background: rgb(0, 48, 0); */
+    
 }
-.heading1{
-    font-size: 3vh;
+
+.heading1 h1 {
+    /* background-color: blue; */
+    text-align: center;
+    color:var(--texthover); /* Change to your preferred color */
+    font-size: 40px;
 }
 .content{
     /* background: blue; */
@@ -28,95 +33,95 @@
     padding: 20px;
 }
 .child2 {
-    
-    height: 70%;
-    /* background: blueviolet; */
-    width: 70%; 
+    /* background-color: blueviolet; */
     display: flex;
+    height: auto;
+    width: fill;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 10vh;
+
 }
-.heading2{
-    margin-bottom: 10vh;
+
+.h1{
+    /* background-color: brown; */
+    text-align: center;
+    margin:3vh 0vh;
+    color:var(--texthover); /* Change to your preferred color */
+    display: flex ;
+    justify-content: center;
+    font-size: 40px;
 }
 
 .team {
+    /* background-color: green; */
     display: flex;
-    /* background: green; */
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Allow wrapping */
-    width: 80%; /* Full width for the team container */
+    height: auto;
+    width: fill;
+    padding: 2vh;
+    justify-content: center;
+    column-gap: 5vh;
+    row-gap: 5vh;
+    flex-wrap: wrap ;
 }
 
-.team div {
+/* .team div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 39%; 
+    width: 250px; 
     background-color: rgba(41, 40, 40, 0.907);
     border-radius: 10px;
-    height: 47%;
+    height: 250px;
     gap: 20px;
-    /* border: 5px solid black; */
-}
+    padding: 20px;
+} */
 
-.img{
+.box {
+    background-color: rgba(41, 40, 40, 0.907);
+    height: auto;
+    width: 220px; 
+    display: flex;
+    border-radius: 3vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7vh 0vh;
+    row-gap: 7vh;
+}
+.img {
+    height:150px;
+    width: 150px ;
     border-radius: 100%;
 }
-
-
-
-
-
-
-/* For screens larger than 1200px */
-@media (min-width: 1200px) {
-    .container {
-        height: 200vh; /* Adjust height for larger screens */
-    }
-    .child1 {
-        margin-left: 25vh;
-        margin-right: 25vh;
-    }
+.p{
+    font-size: 22px;
 }
 
-/* For tablet screens and medium-sized devices (768px to 1200px) */
-@media (max-width: 1200px) {
-    .child1 {
-        margin-left: 10vh;
-        margin-right: 10vh;
-    }
-    .child2 {
-        width: 80%; /* Reduce width for better fit */
-    }
-    .team div {
-        width: 45%; /* Slightly bigger divs for better spacing */
-    }
-}
-
-/* For mobile screens (max-width: 768px) */
-@media (max-width: 768px) {
-    .container {
-        height: auto; /* Allow auto height for mobile */
-    }
-    .child1 {
-        margin: 5vh; /* Reduce margin for mobile screens */
-    }
-    .child2 {
-        width: 90%; /* Make the child take almost full width */
-    }
+@media (min-width: 1024px) {
     .team {
-        flex-direction: column; /* Stack items vertically */
-    }
-    .team div {
-        width: 90%; /* Make each div take the full width on mobile */
-        height: auto; /* Allow auto height for mobile */
+        padding-left: 350px;
+        padding-right: 350px;
     }
 }
 
 
 
+
+.box:hover{
+    cursor: pointer;
+    transition: 0.3s ; 
+    background-color: rgb(83, 83, 83);
+}
+/* .img:hover{
+    animation: flip;
+    animation:  flip 0.3s ease-in-out forwards; 
+}
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg); 
+    }
+    100% {
+        transform: rotateY(180deg); 
+        width: 0px;
+    }
+} */
