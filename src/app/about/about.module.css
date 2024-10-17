@@ -79,7 +79,7 @@
 .box {
     background-color: rgba(41, 40, 40, 0.907);
     height: auto;
-    width: 220px; 
+    width: 250px; 
     display: flex;
     border-radius: 3vh;
     flex-direction: column;
@@ -99,8 +99,8 @@
 
 @media (min-width: 1024px) {
     .team {
-        padding-left: 350px;
-        padding-right: 350px;
+        padding-left: 500px;
+        padding-right: 500px;
     }
 }
 
