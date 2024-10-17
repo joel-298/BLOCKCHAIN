@@ -28,7 +28,7 @@ const AboutPage = () => {
         <div className={styles.team}>
           <div className={styles.box}>
             <div className={styles.one}>
-                <Image src="/noavatar.png" alt="profile_img" height={200} width={200} className={styles.img} />
+                <Image src="/noavatar.png" alt="profile_img" height={200} width={190} className={styles.img} />
                 <p className={styles.p}>Lokesh</p>
               </div>
 
@@ -39,7 +39,7 @@ const AboutPage = () => {
           </div>
           <div className={styles.box}>
             <div className={styles.one}>
-                <Image src="/noavatar.png" alt="profile_img" height={200} width={200} className={styles.img} />
+                <Image src="/noavatar.png" alt="profile_img" height={200} width={190} className={styles.img} />
                 <p className={styles.p}>Kavyam</p>
               </div>
 
@@ -50,7 +50,7 @@ const AboutPage = () => {
           </div>
           <div className={styles.box}>
             <div className={styles.one}>
-                <Image src="/Joel.jpg" alt="profile_img" height={200} width={200} className={styles.img} />
+                <Image src="/Joel.jpg" alt="profile_img" height={200} width={190} className={styles.img} />
                 <p className={styles.p}>Joel</p>
               </div>
 
@@ -61,7 +61,7 @@ const AboutPage = () => {
           </div>
           <div className={styles.box}>
             <div className={styles.one}>
-              <Image src="/noavatar.png" alt="profile_img" height={200} width={200} className={styles.img} />
+              <Image src="/kashish.jpeg" alt="profile_img" height={180} width={190} className={styles.img} />
               <p className={styles.p}>Kashish</p>
             </div>
 
