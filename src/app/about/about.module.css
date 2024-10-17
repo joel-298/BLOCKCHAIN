@@ -1,5 +1,4 @@
-.container{
-    /* background: red; */
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,52 +6,46 @@
     height: auto;
     overflow: hidden;
     padding: 5vh 1vh;
-    
 }
-.child1{
+
+.child1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* background: rgb(0, 48, 0); */
-    
 }
 
 .heading1 h1 {
-    /* background-color: blue; */
     text-align: center;
-    color:var(--texthover); /* Change to your preferred color */
+    color: var(--texthover); /* Change to your preferred color */
     font-size: 40px;
 }
-.content{
-    /* background: blue; */
+
+.content {
     text-align: center;
     font-size: 2.7vh;
     font-weight: 300;
     margin: 20px;
     padding: 20px;
 }
+
 .child2 {
-    /* background-color: blueviolet; */
     display: flex;
     height: auto;
     width: fill;
     flex-direction: column;
-
 }
 
-.h1{
-    /* background-color: brown; */
+.h1 {
     text-align: center;
-    margin:3vh 0vh;
-    color:var(--texthover); /* Change to your preferred color */
-    display: flex ;
+    margin: 3vh 0vh;
+    color: var(--texthover); /* Change to your preferred color */
+    display: flex;
     justify-content: center;
     font-size: 40px;
 }
 
 .team {
-    /* background-color: green; */
     display: flex;
     height: auto;
     width: fill;
@@ -60,40 +53,62 @@
     justify-content: center;
     column-gap: 5vh;
     row-gap: 5vh;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
 }
 
-/* .team div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 250px; 
-    background-color: rgba(41, 40, 40, 0.907);
-    border-radius: 10px;
-    height: 250px;
-    gap: 20px;
-    padding: 20px;
-} */
-
+/* Card Box Styling */
 .box {
     background-color: rgba(41, 40, 40, 0.907);
-    height: auto;
-    width: 250px; 
+    height: 350px;
+    width: 250px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 3vh;
+    position: relative;
+    perspective: 1000px; /* Adds perspective for 3D effect */
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d; /* Necessary for 3D rotation */
+}
+
+.one, .two {
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    height: 100%;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 7vh 0vh;
     row-gap: 7vh;
 }
+
+.one {
+    opacity: 1;
+    transform: rotateY(0deg); /* Default state */
+}
+
+.two {
+    opacity: 0;
+    transform: rotateY(180deg); /* Start in hidden state */
+}
+
+.icon {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .img {
-    height:150px;
-    width: 150px ;
+    height: 150px;
+    width: 150px;
     border-radius: 100%;
 }
-.p{
+
+.p {
     font-size: 22px;
 }
 
@@ -104,24 +119,17 @@
     }
 }
 
-
-
-
-.box:hover{
+/* Flip Animation on Hover */
+.box:hover {
+    transform: rotateY(180deg); /* Flip the box */
     cursor: pointer;
-    transition: 0.3s ; 
-    background-color: rgb(83, 83, 83);
 }
-/* .img:hover{
-    animation: flip;
-    animation:  flip 0.3s ease-in-out forwards; 
+
+.box:hover .one {
+    opacity: 0; /* Hide .one during the flip */
 }
-@keyframes flip {
-    0% {
-        transform: rotateY(0deg); 4
-    }
-    100% {
-        transform: rotateY(180deg); 
-        width: 0px;
-    }
-} */
+
+.box:hover .two {
+    opacity: 1; 
+    transform: rotateY(180deg); 
+}
